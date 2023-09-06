@@ -13,14 +13,14 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->Host = 'smtp.outlook.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'clientes@bmvix.com.br';
-$mail->Password = 'hwqgSz9MLPSAJn!';
+$mail->Username = 'seu email';
+$mail->Password = 'sua senha';
 $mail->SMTPSecure = 'tls'; // Use 'tls' ou 'ssl' dependendo das configurações do seu servidor
 $mail->Port = 587; // Porta SMTP
 
 
-$mail->setFrom('clientes@bmvix.com.br', 'Cliente');
-$mail->addAddress('luyan@allcard.com.br', 'Luyan');
+$mail->setFrom('seu email', 'Cliente');
+$mail->addAddress('email recebedor', 'Luyan');
 
 $mail->isHTML(true);
 $mail->Subject = 'Quero saber mais';
