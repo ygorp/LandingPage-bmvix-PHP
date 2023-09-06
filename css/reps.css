@@ -1,0 +1,116 @@
+:root {
+    --primary: #932d34;
+    --secondary: #95989A;
+    --text-color: #FFFFFF;
+    --text-card: #707070;
+    --text-title: #333;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+    --background-input: #BD5C5C;
+    --background-vantagens: #2B2B2B;
+    --background-card: #FFFFFF;
+    --background-card-beneficios: #f1f5f9;
+}
+
+.tipos-rep {
+    width: 100%;
+    background-color: var(--background-vantagens);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.tipos-rep h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 30px;
+    color: var(--background-input);
+}
+
+.rep-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.rep {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-card);
+    border-radius: 10px;
+    width: 15em;
+    height: 25em;
+    margin-top: 3rem;
+    margin-bottom: 2em;
+    padding: 8px;
+}
+
+.rep img {
+    width: 200px;
+    height: 200px;
+}
+
+.rep-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+    margin-top: 1rem;
+}
+
+.rep-video {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rep-video h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    color: var(--text-title);
+}
+
+.rep-video video {
+    border: 3px solid var(--primary);
+    border-radius: 8px;
+}
+
+@media (max-width: 1035px) {
+    .rep-group {
+        flex-direction: column;
+    }
+    .rep {
+        width: 25em;
+    }
+}
+
+@media (max-width: 917px) {
+    .rep-video video {
+        width: 40em;
+    }
+}
+
+@media (max-width: 681px) {
+    .rep-video video {
+        width: 25em;
+    }
+}
+
+@media (max-width: 445px) {
+    .rep {
+        width: 19em;
+    }
+    .rep-video video {
+        width: 20em;
+    }
+}
