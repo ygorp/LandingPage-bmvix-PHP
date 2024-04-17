@@ -52,68 +52,81 @@
     </header>
 
     <main>
-        <section id="beneficios">
-            <h2>Quais são os beneficios de manter um controle eficiente da jornada de trabalho:</h2>
+        <section id="beneficios">                
+                <div class="content_beneficios">
+                    <div class="beneficios">
+                        <h2>Beneficios de manter um controle eficiente da jornada de trabalho:</h2>
+                        <ul>
+                            <li>Conformidade legal</li>
+                            <li>Precisão nos cálculos</li>
+                            <li>Controle financeiro</li>
+                            <li>Transparência e confiança entre as partes</li>
+                            <li>Gestão do tempo</li>
+                            <li>Tomada de decisão<br> baseado em dados</li>
+                            <li>Redução de conflitos</li>
+                            <li>Foco na produtividade</li>
+                        </ul>
+                        <button id="saibaMais" class="animation">Saiba mais</button>
+                    </div>
 
-            <div class="mobile-beneficios">
-                <div class="beneficios">
-                    <div>Conformidade legal</div>
-                    <div>Precisão nos cálculos</div>
-                    <div>Controle financeiro</div>
-                    <div>Transparência e confiança entre as partes</div>
-                </div>
-        
-                <div class="beneficios">
-                    <div>Gestão do tempo</div>
-                    <div>Tomada de decisão<br> baseado em dados</div>
-                    <div>Redução de conflitos</div>
-                    <div>Foco na produtividade</div>
-                </div>
-            </div>
-            
+                    <div class="video_beneficios">
+                        <video src="/video/secullum.mp4" autoplay="true" controls></video>
+                    </div>
+                </div>          
         </section>
 
         <section id="reps"> 
-            <div class="tipos-rep">
-                <h2>Quais tipos de relógio são permitidos por lei para meu estabelecimento:</h2> 
-                <div class="rep-group">
-                    <div class="rep">
-                        <img src="img/idclass.jpg" alt="relógio idclass">
-                        <div class="rep-text">
-                            <h3>REP-C</h3>
-                            <p>Registrador que emite comprovante a cada registro, 1 CNPJ por máquina</p>
+            <div class="rep-title">
+                <h2>Tipos de equipamentos que são permitidos por lei:</h2>
+            </div>
+
+            <div class="descricao">
+                <div class="rep-video">
+                    <video src="/video/Relógios.mp4" controls></video>
+                </div>
+
+                <div class="descricao-tipo-rep">
+                    <div class="tipo-rep">
+                        <div class="card-rep">
+                            <img src="/img/idclass.jpg" alt="Relógio idclass control id">
+                            <div class="card-text">
+                                <h3>REP-C</h3>
+                                <p>Registrador que emite comprovante a cada registro, 1 CNPJ por máquina</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="rep">
-                        <img src="img/idflex.webp" alt="relógio idflex">
-                        <div class="rep-text">
-                            <h3>REP-A</h3>
-                            <p>Registrador de ponto que não necessita emissão de comprovante, podendo ser utilizado mais de 1 CNPJ</p>
+                    <div class="tipo-rep">
+                        <div class="card-rep">
+                            <img src="/img/idflex.webp" alt="Equipamento IDFlex control id">
+                            <div class="card-text">
+                                <h3>REP-A</h3>
+                                <p>Registrador de ponto que não necessita emissão de comprovante, podendo ser utilizado mais de 1 CNPJ</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="rep">
-                        <img src="img/checkin.png" alt="relógio idclass">
-                        <div class="rep-text">
-                            <h3>REP-P</h3>
-                            <p>Registrador de ponto via programa, nessa opção utiliza-se o próprio computador, tablet ou celular</p>
+                    <div class="tipo-rep">
+                        <div class="card-rep">
+                            <img src="/img/checkin.png" alt="Imagem com computador e celular, exibindo aplicativo secullum ponto">
+                            <div class="card-text">
+                                <h3>REP-P</h3>
+                                <p>Registrador de ponto via programa, nessa opção utiliza-se o próprio computador, tablet ou celular</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="rep">
-                        <img src="img/cartografico.webp" alt="relógio idflex">
-                        <div class="rep-text">
-                            <h3>Cartografico</h3>
-                            <p>Registrador de ponto que utiliza um cartão para marcar os pontos</p>
+                    <div class="tipo-rep">
+                        <div class="card-rep">
+                            <img src="/img/cartografico.webp" alt="Relógio idclass control id">
+                            <div class="card-text">
+                                <h3>Cartografico</h3>
+                                <p>Registrador de ponto que utiliza um cartão para marcar os pontos</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="rep-video">
-                <h2>Breve apresentação dos equipamentos pelo nosso especialista</h2>
-                <video src="video/Relógios.mp4" controls="true"</video>
-            </div>      
         </section>
 
         <section id="vantagens">

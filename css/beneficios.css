@@ -8,59 +8,79 @@
     --background-vantagens: #2B2B2B;
 }
 
-/* beneficios */
-#beneficios h2 {
-    text-align: center;
-    margin-top: 1.5rem;
-    font-size: 30px;
-}
-
-.beneficios {
+#beneficios {
     width: 100%;
+    height: 550px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    gap: 3em;
-    padding: 20px;
+    align-items: center;
 }
 
-.beneficios div {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  background: var(--background-card-beneficios);
-  color: var(--background-vantagens);
-  width: 13em;
-  height: 8em;
-  padding: 20px;
-  border-bottom: 4px solid var(--primary);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
+.content_beneficios {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width: 945px) {
-    .mobile-beneficios {
-        display: flex;
-        flex-direction: column;
-    }
-    .beneficios {
-        margin-top: 2rem;
-        flex-direction: column;
-    }
+.video_beneficios,
+.beneficios {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
 }
 
-@media (max-width: 583px) {
-    #beneficios h2 {
-        font-size: 20px;
+.video_beneficios video {
+    width: 650px;
+    margin-top: 6rem;
+    border-radius: 10px;
+}
+
+.beneficios h2 {
+    color: var(--primary);
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 4rem;
+}
+
+.beneficios ul li {
+    color: var(--text-tertiary);
+    font-size: 19px;
+    margin-bottom: 10px;
+    margin-left: 1.2rem;
+}
+
+.animation {
+    animation: alerta 1.5s infinite;
+}
+
+#saibaMais {
+    width: 220px;
+    padding: 8px 10px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--primary);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(165, 58, 9, 0.5);
+    transition: background, padding 500ms ease-in-out;
+}
+
+@keyframes alerta {
+    0% {
+      transform: scale(1);
     }
-    .beneficios div {
-        width: 20em;
-        height: 10em;
-        font-size: 14px;
+    70% {
+      transform: scale(1.2);
+      box-shadow: 0 0 0 50px rgba(152, 46, 27, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(152, 46, 27, 0);
     }
 }

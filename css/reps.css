@@ -12,105 +12,65 @@
     --background-card-beneficios: #f1f5f9;
 }
 
-.tipos-rep {
+#reps {
     width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
     background-color: var(--background-vantagens);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.tipos-rep h2 {
-    text-align: center;
-    margin-top: 1.5rem;
-    font-size: 30px;
-    color: var(--background-input);
-}
-
-.rep-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.rep {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--background-card);
-    border-radius: 10px;
-    width: 15em;
-    height: 25em;
-    margin-top: 3rem;
-    margin-bottom: 2em;
-    padding: 8px;
-}
-
-.rep img {
-    width: 200px;
-    height: 200px;
-}
-
-.rep-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 2em;
-    margin-top: 1rem;
-}
-
-.rep-video {
-    width: 100%;
     padding: 3rem;
+}
+
+.rep-title h2 {
+    color: var(--primary);
+    font-size: 35px;
+}
+
+.descricao {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.tipo-rep {
+    width: 100%;
+    height: 150px;
+    background-color: var(--background-card);
+    border-radius: 30px;
+    padding: 2rem;
+    display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.rep-video h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 2rem;
-    color: var(--text-title);
+.descricao-tipo-rep {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.descricao-tipo-rep,
+.rep-video {
+    width: 50%;
 }
 
 .rep-video video {
-    border: 3px solid var(--primary);
-    border-radius: 8px;
+    width: 50em;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
 }
 
-@media (max-width: 1035px) {
-    .rep-group {
-        flex-direction: column;
-    }
-    .rep {
-        width: 25em;
-    }
+.card-rep {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
-@media (max-width: 917px) {
-    .rep-video video {
-        width: 40em;
-    }
+.card-rep img {
+    width: 120px;
 }
 
-@media (max-width: 681px) {
-    .rep-video video {
-        width: 25em;
-    }
-}
-
-@media (max-width: 445px) {
-    .rep {
-        width: 19em;
-    }
-    .rep-video video {
-        width: 20em;
-    }
+.card-rep p {
+    color: var(--text-card);
+    font-size: 20px;
 }
